@@ -15,7 +15,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="App" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="Nexus_5_API_30" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -116,5 +116,11 @@
       <updated>1599375079548</updated>
     </task>
     <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="398" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1599699772403">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="398" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1599699772403" />
   </component>
 </project>

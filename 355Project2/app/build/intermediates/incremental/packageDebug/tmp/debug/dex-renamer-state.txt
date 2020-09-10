@@ -1,0 +1,4 @@
+#Wed Sep 09 20:55:38 EDT 2020
+base.0=C\:\\Users\\minio\\Desktop\\GitClones\\355ProjectFinal\\355Project2\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+path.0=classes.dex
+renamed.0=classes.dex
