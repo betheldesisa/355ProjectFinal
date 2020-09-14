@@ -887,6 +887,8 @@ id beginning
 id blocking
 id bottom
 id bounce
+id button
+id button2
 id buttonPanel
 id center
 id center_vertical
@@ -1035,13 +1037,7 @@ id text
 id text2
 id textSpacerNoButtons
 id textSpacerNoTitle
-id textView
-id textView2
 id textView3
-id textView4
-id textView5
-id textView6
-id textView7
 id time
 id title
 id titleDividerNoCustom
