@@ -43,6 +43,7 @@
     <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="memory.settings.postsync.last.time.stamp" value="1599698829104" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
@@ -118,9 +119,17 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="398" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1600107335373">
+    <state x="440" y="193" key="#Notifications" timestamp="1600136846918">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="398" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600107335373" />
+    <state x="440" y="193" key="#Notifications/0.0.1920.1040@0.0.1920.1040" timestamp="1600136846918" />
+    <state x="349" y="177" key="SettingsEditor" timestamp="1600136832874">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="349" y="177" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1600136832874" />
+    <state x="398" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1600136770341">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="398" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600136770341" />
   </component>
 </project>
