@@ -45,6 +45,11 @@
     <property name="memory.settings.postsync.last.time.stamp" value="1599698829104" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
+  <component name="RecentsManager">
+    <key name="android.template.-1162660770">
+      <recent name="com.example.a355project" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
       <option name="TEST_OBJECT" value="class" />
@@ -123,13 +128,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="440" y="193" key="#Notifications/0.0.1920.1040@0.0.1920.1040" timestamp="1600136846918" />
+    <state x="315" y="23" key="CommitChangelistDialog2" timestamp="1600300881460">
+      <screen x="0" y="23" width="1440" height="797" />
+    </state>
+    <state x="315" y="23" key="CommitChangelistDialog2/1440.23.1920.1057/0.23.1440.797@0.23.1440.797" timestamp="1600300881460" />
     <state x="349" y="177" key="SettingsEditor" timestamp="1600136832874">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="349" y="177" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1600136832874" />
-    <state x="398" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1600136770341">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="1838" y="373" key="com.intellij.ide.util.TipDialog" timestamp="1600300768245">
+      <screen x="1440" y="23" width="1920" height="1057" />
     </state>
     <state x="398" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600136770341" />
+    <state x="1838" y="373" key="com.intellij.ide.util.TipDialog/1440.23.1920.1057/0.23.1440.797@1440.23.1920.1057" timestamp="1600300768245" />
   </component>
 </project>
