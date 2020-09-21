@@ -889,7 +889,16 @@ id blocking
 id bottom
 id bounce
 id button
+id button10
+id button11
 id button2
+id button3
+id button4
+id button5
+id button6
+id button7
+id button8
+id button9
 id buttonPanel
 id center
 id center_vertical
@@ -1001,6 +1010,7 @@ id search_mag_icon
 id search_plate
 id search_src_text
 id search_voice_btn
+id seekBar
 id select_dialog_listview
 id shortcut
 id showCustom
@@ -1042,6 +1052,12 @@ id textSpacerNoTitle
 id textView
 id textView2
 id textView3
+id textView4
+id textView5
+id textView6
+id textView7
+id textView8
+id textView9
 id time
 id title
 id titleDividerNoCustom

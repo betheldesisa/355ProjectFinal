@@ -1,11 +1,11 @@
 [
     {
-        "merged": "/Users/zakfowler/Desktop/GitHub/355ProjectFinal/355Project2/app/build/intermediates/res/merged/debug/drawable-v24_ic_launcher_foreground.xml.flat",
-        "source": "/Users/zakfowler/Desktop/GitHub/355ProjectFinal/355Project2/app/src/main/res/drawable-v24/ic_launcher_foreground.xml"
-    },
-    {
         "merged": "/Users/zakfowler/Desktop/GitHub/355ProjectFinal/355Project2/app/build/intermediates/res/merged/debug/mipmap-hdpi_ic_launcher.png.flat",
         "source": "/Users/zakfowler/Desktop/GitHub/355ProjectFinal/355Project2/app/src/main/res/mipmap-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/zakfowler/Desktop/GitHub/355ProjectFinal/355Project2/app/build/intermediates/res/merged/debug/drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "/Users/zakfowler/Desktop/GitHub/355ProjectFinal/355Project2/app/src/main/res/drawable-v24/ic_launcher_foreground.xml"
     },
     {
         "merged": "/Users/zakfowler/Desktop/GitHub/355ProjectFinal/355Project2/app/build/intermediates/res/merged/debug/mipmap-mdpi_ic_launcher_round.png.flat",
