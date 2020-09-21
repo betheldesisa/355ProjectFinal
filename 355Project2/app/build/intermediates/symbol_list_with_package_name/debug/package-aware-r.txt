@@ -23,6 +23,7 @@ anim btn_radio_to_off_mtrl_ring_outer_path_animation
 anim btn_radio_to_on_mtrl_dot_group_animation
 anim btn_radio_to_on_mtrl_ring_outer_animation
 anim btn_radio_to_on_mtrl_ring_outer_path_animation
+array TypeOfFood
 attr actionBarDivider
 attr actionBarItemBackground
 attr actionBarPopupTheme
@@ -1007,6 +1008,7 @@ id showHome
 id showTitle
 id sin
 id spacer
+id spinner1
 id spline
 id split_action_bar
 id spread
@@ -1038,6 +1040,7 @@ id text2
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textView
+id textView2
 id textView3
 id time
 id title
