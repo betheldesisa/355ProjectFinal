@@ -83,6 +83,8 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.704" />
 
+    <!-- Price buttons ($,$$,$$$) -->
+
     <Button
         android:id="@+id/button5"
         android:layout_width="63dp"
@@ -94,6 +96,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.171" />
+
 
     <TextView
         android:id="@+id/textView4"
