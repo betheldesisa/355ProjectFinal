@@ -1017,6 +1017,7 @@ id showCustom
 id showHome
 id showTitle
 id sin
+id sliderValue
 id spacer
 id spinner1
 id spline
