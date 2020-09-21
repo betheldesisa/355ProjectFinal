@@ -23,6 +23,21 @@ public class MainActivity extends AppCompatActivity {
                 openActivity2();
             }
         });
+
+        //Initialize Tips Button
+        Button tipsBtn = (Button) findViewById(R.id.button);
+        tipsBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                openActivity3();
+            }
+        });
+    }
+
+    //Tip button method
+    public void openActivity3() {
+        Intent tipsIntent = new Intent(MainActivity.this, Activity3.class);
+        startActivity(tipsIntent);
     }
 
     public void openActivity2(){
