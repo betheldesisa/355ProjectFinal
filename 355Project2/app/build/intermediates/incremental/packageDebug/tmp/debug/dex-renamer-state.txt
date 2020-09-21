@@ -1,4 +1,4 @@
-#Sun Sep 20 20:28:47 EDT 2020
-base.0=/Users/zakfowler/Desktop/GitHub/355ProjectFinal/355Project2/app/build/intermediates/dex/debug/mergeDexDebug/classes.dex
+#Mon Sep 21 14:21:15 EDT 2020
+base.0=C\:\\Users\\minio\\Desktop\\GitClones\\355ProjectFinal\\355Project2\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
 path.0=classes.dex
 renamed.0=classes.dex
