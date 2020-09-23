@@ -6,8 +6,8 @@
     </shared>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="98a77d57-5afa-4e3d-8ef8-241a502b9dc3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="c2b1a316-5e40-4088-ba48-a2864ba8cf9b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/local.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +49,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="memory.settings.postsync.last.time.stamp" value="1600630107564" />
+    <property name="memory.settings.postsync.last.time.stamp" value="1600877963702" />
   </component>
   <component name="RecentsManager">
     <key name="android.template.2031308694">
@@ -134,7 +134,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
