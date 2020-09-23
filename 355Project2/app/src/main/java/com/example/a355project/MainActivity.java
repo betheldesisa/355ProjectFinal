@@ -15,8 +15,10 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        button = (Button) findViewById(R.id.button2);
+        //Avoid adding things in here to improve app speed. Just create methods instead
+        //Avoid using this for onClick listener, Just add a view parameter in the method and in the xml file use android:onClick="openActivity3" for an example.
+        //See the openActivity3 method below for reference
+        /*  button = (Button) findViewById(R.id.button2);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v){
@@ -31,11 +33,11 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 openActivity3();
             }
-        });
+        });*/
     }
 
     //Tip button method
-    public void openActivity3() {
+    public void openActivity3(View view) {
         Intent tipsIntent = new Intent(MainActivity.this, Activity3.class);
         startActivity(tipsIntent);
     }
