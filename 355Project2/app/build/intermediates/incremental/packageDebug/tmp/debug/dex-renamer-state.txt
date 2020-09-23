@@ -1,4 +1,4 @@
-#Mon Sep 21 15:30:48 EDT 2020
-base.0=C\:\\Users\\minio\\Desktop\\GitClones\\355ProjectFinal\\355Project2\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+#Wed Sep 23 01:58:56 EDT 2020
+base.0=D\:\\CMSC 355\\355ProjectFinal\\355Project2\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
 path.0=classes.dex
 renamed.0=classes.dex

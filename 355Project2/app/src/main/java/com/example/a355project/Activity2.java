@@ -3,7 +3,12 @@ package com.example.a355project;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.content.pm.ResolveInfo;
+import android.net.Uri;
+import android.os.Binder;
 import android.os.Bundle;
+import android.security.keystore.StrongBoxUnavailableException;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -12,6 +17,8 @@ import android.widget.SeekBar;
 import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import java.util.List;
 
 public class Activity2 extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
 
@@ -51,6 +58,8 @@ public class Activity2 extends AppCompatActivity implements AdapterView.OnItemSe
 
 
     private Button button2;
+    private Button button3;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -67,6 +76,18 @@ public class Activity2 extends AppCompatActivity implements AdapterView.OnItemSe
             public void onClick(View v){
                 openActivityMain();
             }
+        });
+
+        button3 = (Button) findViewById(R.id.button12);
+        Uri address = Uri.parse("geo:0,0?q=Canes+VCU"); //canes on campus for testing functionality
+        final Intent openMaps = new Intent(Intent.ACTION_VIEW, address);
+
+        button3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(openMaps);
+            }
+
         });
     /*
     Spinner object creates the dropdown button for "Type of Food"
