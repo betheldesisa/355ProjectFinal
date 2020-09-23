@@ -5,10 +5,16 @@
 
     <string-array name="TypeOfFood">
         <item>Select</item>
-        <item>Mexican</item>
-        <item>Chinese</item>
-        <item>Japanese</item>
         <item>American</item>
+        <item>African</item>
+        <item>Chinese</item>
+        <item>Caribbean</item>
+        <item>Indian</item>
+        <item>Italian</item>
+        <item>Japanese</item>
+        <item>Mexican</item>
+        <item>Seafood</item>
+        <item>Vegetarian</item>
         <item>Fast Food</item>
     </string-array>
 
