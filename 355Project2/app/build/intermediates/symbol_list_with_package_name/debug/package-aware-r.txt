@@ -891,6 +891,7 @@ id bounce
 id button
 id button10
 id button11
+id button12
 id button2
 id button3
 id button4
@@ -1017,6 +1018,7 @@ id showCustom
 id showHome
 id showTitle
 id sin
+id sliderValue
 id spacer
 id spinner1
 id spline
