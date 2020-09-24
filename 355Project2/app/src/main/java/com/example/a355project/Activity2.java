@@ -57,8 +57,7 @@ public class Activity2 extends AppCompatActivity implements AdapterView.OnItemSe
 
 
 
-    //intialized interchangeable scenes buttons
-    private Button button2;
+    //intialized buttons
     private Button button3;
 
 
@@ -70,14 +69,6 @@ public class Activity2 extends AppCompatActivity implements AdapterView.OnItemSe
         /************** Need to fix this for slider bar value *********/
         //seekbar();
         /*********** Slider bar VALUE STUFF ************/
-
-        button2 = (Button) findViewById(R.id.button);
-        button2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view){
-                openActivityMain();
-            }
-        });
 
         button3 = (Button) findViewById(R.id.button12);
         Uri address = Uri.parse("geo:0,0 ?q=Canes+VCU"); //canes on campus for testing functionality
@@ -105,12 +96,10 @@ public class Activity2 extends AppCompatActivity implements AdapterView.OnItemSe
     }
 
     //opens the mainActivity when the button is clicked
-    public void openActivityMain(){
+    public void openActivityMain(View view){
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
     }
-
-
 
     @Override
     public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {

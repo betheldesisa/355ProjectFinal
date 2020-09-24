@@ -1,4 +1,7 @@
-#Thu Sep 24 11:55:34 EDT 2020
-base.0=D\:\\CMSC 355\\355ProjectFinal\\355Project2\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+#Thu Sep 24 18:30:33 EDT 2020
+base.0=/Users/zakfowler/Desktop/GitHub/355ProjectFinal/355Project2/D\:\\CMSC 355\\355ProjectFinal\\355Project2\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+path.1=classes.dex
+renamed.1=classes2.dex
 path.0=classes.dex
 renamed.0=classes.dex
+base.1=/Users/zakfowler/Desktop/GitHub/355ProjectFinal/355Project2/app/build/intermediates/dex/debug/mergeDexDebug/classes.dex
