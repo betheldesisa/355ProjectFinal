@@ -80,13 +80,16 @@ public class Activity2 extends AppCompatActivity implements AdapterView.OnItemSe
         });
 
         button3 = (Button) findViewById(R.id.button12);
-        Uri address = Uri.parse("geo:0,0?q=Canes+VCU"); //canes on campus for testing functionality
+        Uri address = Uri.parse("geo:0,0 ?q=Canes+VCU"); //canes on campus for testing functionality
         final Intent openMaps = new Intent(Intent.ACTION_VIEW, address);
 
         button3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(openMaps);
+                if(openMaps.resolveActivity(getPackageManager()) != null) { //checks if there is an app installed that can handle gps
+                    startActivity(openMaps);
+
+                }
             }
 
         });

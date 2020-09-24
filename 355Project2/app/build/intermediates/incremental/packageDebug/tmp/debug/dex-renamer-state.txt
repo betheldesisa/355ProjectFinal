@@ -1,4 +1,4 @@
-#Wed Sep 23 12:43:50 EDT 2020
-base.0=/Users/jazmingering/Desktop/355FinalProject/355Project2/app/build/intermediates/dex/debug/mergeDexDebug/classes.dex
+#Thu Sep 24 11:55:34 EDT 2020
+base.0=D\:\\CMSC 355\\355ProjectFinal\\355Project2\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
 path.0=classes.dex
 renamed.0=classes.dex
