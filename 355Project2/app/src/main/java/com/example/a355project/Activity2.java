@@ -70,6 +70,7 @@ public class Activity2 extends AppCompatActivity implements AdapterView.OnItemSe
         //seekbar();
         /*********** Slider bar VALUE STUFF ************/
 
+        //navigate button and openMaps intent to open Map utility and go to chosen place
         button3 = (Button) findViewById(R.id.button12);
         Uri address = Uri.parse("geo:0,0 ?q=Canes+VCU"); //canes on campus for testing functionality
         final Intent openMaps = new Intent(Intent.ACTION_VIEW, address);
@@ -78,7 +79,7 @@ public class Activity2 extends AppCompatActivity implements AdapterView.OnItemSe
             @Override
             public void onClick(View view) {
                 if(openMaps.resolveActivity(getPackageManager()) != null) { //checks if there is an app installed that can handle gps
-                    startActivity(openMaps);
+                    startActivity(openMaps); //opens openMaps Intent which calls google maps or other mapp utility to open
 
                 }
             }
