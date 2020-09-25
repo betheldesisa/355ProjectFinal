@@ -1,7 +1,12 @@
 <resources>
     <string name="app_name">355Project</string>
+
+    <!-- How to tips -->
+
     <string name="tips">Tips</string>
     <string name="tipsHowTo">How To Use</string>
+
+    <!-- String array for type of food-->
 
     <string-array name="TypeOfFood">
         <item>Select</item>
