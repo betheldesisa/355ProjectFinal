@@ -7,10 +7,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="98a77d57-5afa-4e3d-8ef8-241a502b9dc3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.1.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/a355project/Activity2.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/a355project/Activity2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/local.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -18,7 +15,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="Pixel_3_API_28" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="App" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -47,7 +44,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="memory.settings.postsync.last.time.stamp" value="1599698829104" />
+    <property name="memory.settings.postsync.last.time.stamp" value="1601093279385" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
@@ -145,10 +142,11 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="349" y="177" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1600136832874" />
-    <state x="398" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1601088691463">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="299" y="297" key="com.intellij.ide.util.TipDialog" timestamp="1601093246609">
+      <screen x="0" y="23" width="1440" height="828" />
     </state>
     <state x="398" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1601088691463" />
+    <state x="299" y="297" key="com.intellij.ide.util.TipDialog/0.23.1440.828@0.23.1440.828" timestamp="1601093246609" />
     <state x="299" y="287" key="com.intellij.ide.util.TipDialog/1440.23.1920.1057/0.23.1440.797@0.23.1440.797" timestamp="1600707855688" />
     <state x="1838" y="373" key="com.intellij.ide.util.TipDialog/1440.23.1920.1057/0.23.1440.797@1440.23.1920.1057" timestamp="1600300768245" />
     <state x="299" y="313" key="com.intellij.ide.util.TipDialog/1440.23.1920.977/0.23.1440.877@0.23.1440.877" timestamp="1600986156798" />
