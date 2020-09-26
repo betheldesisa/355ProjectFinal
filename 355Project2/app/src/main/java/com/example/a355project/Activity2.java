@@ -20,6 +20,7 @@ import android.widget.Toast;
 
 import java.util.List;
 
+//Jusitn Commit 4
 public class Activity2 extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
 
     /**************************** WORKING ON SLIDER BAR VALUE *********************/
