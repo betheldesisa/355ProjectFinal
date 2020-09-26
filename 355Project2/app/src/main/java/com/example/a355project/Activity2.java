@@ -68,7 +68,7 @@ public class Activity2 extends AppCompatActivity implements AdapterView.OnItemSe
         setContentView(R.layout.activity_2);
 
         /************** Need to fix this for slider bar value *********/
-        //seekbar();
+        seekbar();
         /*********** Slider bar VALUE STUFF ************/
 
         //navigate button and openMaps intent to open Map utility and go to chosen place
