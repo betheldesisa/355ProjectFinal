@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ddf50c9d-a376-490d-9304-6e1fe026d721" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/355Project2/.gradle/6.1.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/355Project2/.gradle/6.1.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/355Project2/.gradle/6.1.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/355Project2/.gradle/6.1.1/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/355Project2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/355Project2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/355Project2/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/355Project2/local.properties" afterDir="false" />
-    </list>
+    <list default="true" id="ddf50c9d-a376-490d-9304-6e1fe026d721" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -41,10 +36,10 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1600838511703">
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1601609896207">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1600838511703" />
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1601609896207" />
     <state x="398" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1599698792360">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
