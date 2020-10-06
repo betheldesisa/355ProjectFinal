@@ -15,7 +15,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="Pixel_3a_XL_API_30" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="Nexus_5_API_30" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -39,6 +39,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
     <key name="android.template.1651173585">
@@ -123,10 +124,14 @@
       <screen x="0" y="23" width="1440" height="797" />
     </state>
     <state x="437" y="172" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/1440.23.1920.1057/0.23.1440.797@0.23.1440.797" timestamp="1601947801849" />
-    <state x="394" y="347" key="com.intellij.ide.util.TipDialog" timestamp="1601445266559">
+    <state x="198" y="165" key="SettingsEditor" timestamp="1601956420379">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="394" y="347" key="com.intellij.ide.util.TipDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1601445266559" />
+    <state x="198" y="165" key="SettingsEditor/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1601956420379" />
+    <state x="394" y="347" key="com.intellij.ide.util.TipDialog" timestamp="1601956400185">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="394" y="347" key="com.intellij.ide.util.TipDialog/-1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1601956400185" />
     <state x="394" y="347" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1601095347341" />
   </component>
 </project>
