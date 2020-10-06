@@ -893,6 +893,8 @@ id button
 id button10
 id button11
 id button12
+id button13
+id button14
 id button2
 id button3
 id button4
@@ -1122,6 +1124,7 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_2
 layout activity_3
+layout activity_4
 layout activity_main
 layout custom_dialog
 layout notification_action
