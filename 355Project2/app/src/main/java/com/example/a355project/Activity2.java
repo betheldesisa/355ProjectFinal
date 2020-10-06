@@ -23,41 +23,6 @@ import java.util.List;
 //Jusitn Commit 4
 public class Activity2 extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
 
-    /**************************** WORKING ON SLIDER BAR VALUE *********************/
-    private static SeekBar seek_bar;
-    private static TextView sliderValue;
-
-    public void seekbar() {
-        seek_bar = (SeekBar)findViewById(R.id.seekBar);
-        sliderValue = (TextView)findViewById(R.id.sliderValue);
-        sliderValue.setText(seek_bar.getProgress());
-
-        seek_bar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
-
-            int progressValue;
-
-            @Override
-            public void onProgressChanged(SeekBar seekBar, int progress, boolean b) {
-                progressValue = progress;
-                sliderValue.setText(progress);
-
-            }
-
-            @Override
-            public void onStartTrackingTouch(SeekBar seekBar) {
-
-            }
-
-            @Override
-            public void onStopTrackingTouch(SeekBar seekBar) {
-                sliderValue.setText(progressValue);
-            }
-        });
-    }
-    /********* SLIDER BAR VALUE STUFF ***********************************************************/
-
-
-
     //intialized buttons
     private Button button3;
 
@@ -67,9 +32,6 @@ public class Activity2 extends AppCompatActivity implements AdapterView.OnItemSe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_2);
 
-        /************** Need to fix this for slider bar value *********/
-        seekbar();
-        /*********** Slider bar VALUE STUFF ************/
 
         //navigate button and openMaps intent to open Map utility and go to chosen place
         button3 = (Button) findViewById(R.id.button12);
@@ -113,4 +75,13 @@ public class Activity2 extends AppCompatActivity implements AdapterView.OnItemSe
     public void onNothingSelected(AdapterView<?> adapterView) {
 
     }
+
+    /*** MADE BY JESUS ON 10/06/2020 ********************************************/
+    /**** NEED TO FIX THIS BUTTON; DOES NOT CALL ACT3, GOES BACK TO MAIN ACT ****/
+    //opens tips menu from Activity2 (TIPS MENU = ACTIVITY3
+    public void openActivity3(View view) {
+        Intent tipsIntent = new Intent(this, Activity3.class);
+        startActivity(tipsIntent);
+    }
+    /*** IF DELETED, NEED TO DELETE TIPS BUTTON ON ACT2.XML; ALL THE WAY AT THE BOTTOM *****/
 }
