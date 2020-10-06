@@ -62,7 +62,7 @@ public class Activity2 extends AppCompatActivity implements AdapterView.OnItemSe
     //opens the mainActivity when the button is clicked
     public void openActivityMain(View view){
         Intent intent = new Intent(this, MainActivity.class);
-        startActivity(intent);
+        startActivity();
     }
 
     @Override
