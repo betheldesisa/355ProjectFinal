@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.content.pm.ResolveInfo;
+import android.graphics.Color;
 import android.net.Uri;
 import android.os.Binder;
 import android.os.Bundle;
@@ -26,6 +27,7 @@ public class Activity2 extends AppCompatActivity implements AdapterView.OnItemSe
     //intialized buttons
     private Button button3;
 
+    Button button6;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -56,6 +58,18 @@ public class Activity2 extends AppCompatActivity implements AdapterView.OnItemSe
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner.setAdapter(adapter);
         spinner.setOnItemSelectedListener(this);
+
+    /*
+    Making the delivery button stay dark when selected
+     */
+
+        button6 = findViewById(R.id.button6);
+        button6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                button6.setBackgroundColor(Color.parseColor("#696969"));
+            }
+        });
 
     }
 
