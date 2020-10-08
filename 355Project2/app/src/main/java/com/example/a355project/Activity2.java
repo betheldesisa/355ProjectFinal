@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.content.pm.ResolveInfo;
 import android.graphics.Color;
+import android.graphics.PorterDuff;
 import android.net.Uri;
 import android.os.Binder;
 import android.os.Bundle;
@@ -60,14 +61,22 @@ public class Activity2 extends AppCompatActivity implements AdapterView.OnItemSe
         spinner.setOnItemSelectedListener(this);
 
     /*
-    Making the delivery button stay dark when selected
+    Making the delivery button stay dark when selected and return to default when unselected
      */
 
         button6 = findViewById(R.id.button6);
         button6.setOnClickListener(new View.OnClickListener() {
+            int select = 1;
             @Override
             public void onClick(View v) {
-                button6.setBackgroundColor(Color.parseColor("#696969"));
+                if(select == 1){
+                    button6.getBackground().setColorFilter(Color.GRAY, PorterDuff.Mode.MULTIPLY);
+                    select = 0;
+                }
+                else if(select == 0){
+                    button6.getBackground().clearColorFilter();
+                    select = 1;
+                }
             }
         });
 
