@@ -296,11 +296,11 @@
 
     <Button
         android:id="@+id/tipsBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="105dp"
+        android:layout_height="71dp"
         android:layout_marginBottom="24dp"
         android:onClick="openActivity3"
-        android:text="Tips"
+        android:text="Tips (BROKEN LINK)"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.086"
