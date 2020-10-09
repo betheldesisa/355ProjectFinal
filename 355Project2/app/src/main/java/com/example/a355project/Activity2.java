@@ -27,7 +27,10 @@ public class Activity2 extends AppCompatActivity implements AdapterView.OnItemSe
     //intialized buttons
     private Button button3;
 
+    //food style buttons
     Button button6;
+    Button button7;
+    Button button11;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -60,7 +63,7 @@ public class Activity2 extends AppCompatActivity implements AdapterView.OnItemSe
         spinner.setOnItemSelectedListener(this);
 
     /*
-    Making the delivery button stay dark when selected and return to default when unselected
+    Food style buttons stay dark when selected and return to default when unselected
      */
 
         button6 = findViewById(R.id.button6);
@@ -74,6 +77,38 @@ public class Activity2 extends AppCompatActivity implements AdapterView.OnItemSe
                 }
                 else if(select == 0){
                     button6.getBackground().clearColorFilter();
+                    select = 1;
+                }
+            }
+        });
+
+        button7 = findViewById(R.id.button7);
+        button7.setOnClickListener(new View.OnClickListener() {
+            int select = 1;
+            @Override
+            public void onClick(View v) {
+                if(select == 1){
+                    button7.getBackground().setColorFilter(Color.GRAY, PorterDuff.Mode.MULTIPLY);
+                    select = 0;
+                }
+                else if(select == 0){
+                    button7.getBackground().clearColorFilter();
+                    select = 1;
+                }
+            }
+        });
+
+        button11 = findViewById(R.id.button11);
+        button11.setOnClickListener(new View.OnClickListener() {
+            int select = 1;
+            @Override
+            public void onClick(View v) {
+                if(select == 1){
+                    button11.getBackground().setColorFilter(Color.GRAY, PorterDuff.Mode.MULTIPLY);
+                    select = 0;
+                }
+                else if(select == 0){
+                    button11.getBackground().clearColorFilter();
                     select = 1;
                 }
             }
