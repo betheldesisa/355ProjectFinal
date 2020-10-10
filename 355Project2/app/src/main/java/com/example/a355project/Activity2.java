@@ -139,6 +139,6 @@ public class Activity2 extends AppCompatActivity implements AdapterView.OnItemSe
 //    public void openActivity3(View view) {
 //        Intent tipsIntent = new Intent(this, Activity3.class);
 //        startActivity(tipsIntent);
-    }
+    //}
     /*** IF DELETED, NEED TO DELETE TIPS BUTTON ON ACT2.XML; ALL THE WAY AT THE BOTTOM *****/
 }
