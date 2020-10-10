@@ -1,10 +1,19 @@
-#Sat Sep 26 00:43:36 EDT 2020
-path.2=classes.dex
+#Thu Oct 08 19:15:16 EDT 2020
 path.1=classes.dex
 path.0=classes.dex
+renamed.5=classes6.dex
+renamed.4=classes5.dex
+renamed.3=classes4.dex
 renamed.2=classes3.dex
 renamed.1=classes2.dex
 renamed.0=classes.dex
-base.2=C\:\\Users\\minio\\Desktop\\GitClones\\355ProjectFinal\\355Project2\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
-base.1=C\:\\Users\\zakfowler\\Desktop\\GitHub\\355ProjectFinal\\355Project2\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
-base.0=C\:\\Users\\zakfowler\\Desktop\\GitHub\\355ProjectFinal\\355Project2\\D\:\\CMSC 355\\355ProjectFinal\\355Project2\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+base.5=/Users/zakfowler/Desktop/GitHub/355ProjectFinal/355Project2/app/build/intermediates/dex/debug/mergeDexDebug/classes.dex
+base.4=/Users/zakfowler/Desktop/GitHub/355ProjectFinal/355Project2/C\:\\Users\\minio\\Desktop\\GitClones\\355ProjectFinal\\355Project2\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+base.3=/Users/zakfowler/Desktop/GitHub/355ProjectFinal/355Project2/C\:\\Users\\zakfowler\\Desktop\\GitHub\\355ProjectFinal\\355Project2\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+base.2=/Users/zakfowler/Desktop/GitHub/355ProjectFinal/355Project2/C\:\\Users\\zakfowler\\Desktop\\GitHub\\355ProjectFinal\\355Project2\\C\:\\Users\\minio\\Desktop\\GitClones\\355ProjectFinal\\355Project2\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+base.1=/Users/zakfowler/Desktop/GitHub/355ProjectFinal/355Project2/C\:\\Users\\zakfowler\\Desktop\\GitHub\\355ProjectFinal\\355Project2\\C\:\\Users\\zakfowler\\Desktop\\GitHub\\355ProjectFinal\\355Project2\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+base.0=/Users/zakfowler/Desktop/GitHub/355ProjectFinal/355Project2/C\:\\Users\\zakfowler\\Desktop\\GitHub\\355ProjectFinal\\355Project2\\C\:\\Users\\zakfowler\\Desktop\\GitHub\\355ProjectFinal\\355Project2\\D\:\\CMSC 355\\355ProjectFinal\\355Project2\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+path.5=classes.dex
+path.4=classes.dex
+path.3=classes.dex
+path.2=classes.dex

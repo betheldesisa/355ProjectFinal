@@ -5,6 +5,8 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.content.pm.ResolveInfo;
+import android.graphics.Color;
+import android.graphics.PorterDuff;
 import android.net.Uri;
 import android.os.Binder;
 import android.os.Bundle;
@@ -20,56 +22,21 @@ import android.widget.Toast;
 
 import java.util.List;
 
-//Jusitn Commit 4
 public class Activity2 extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
-
-    /**************************** WORKING ON SLIDER BAR VALUE *********************/
-    private static SeekBar seek_bar;
-    private static TextView sliderValue;
-
-    public void seekbar() {
-        seek_bar = (SeekBar)findViewById(R.id.seekBar);
-        sliderValue = (TextView)findViewById(R.id.sliderValue);
-        sliderValue.setText(seek_bar.getProgress());
-
-        seek_bar.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
-
-            int progressValue;
-
-            @Override
-            public void onProgressChanged(SeekBar seekBar, int progress, boolean b) {
-                progressValue = progress;
-                sliderValue.setText(progress);
-
-            }
-
-            @Override
-            public void onStartTrackingTouch(SeekBar seekBar) {
-
-            }
-
-            @Override
-            public void onStopTrackingTouch(SeekBar seekBar) {
-                sliderValue.setText(progressValue);
-            }
-        });
-    }
-    /********* SLIDER BAR VALUE STUFF ***********************************************************/
-
-
 
     //intialized buttons
     private Button button3;
 
+    //food style buttons
+    Button button6;
+    Button button7;
+    Button button11;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_2);
 
-        /************** Need to fix this for slider bar value *********/
-        seekbar();
-        /*********** Slider bar VALUE STUFF ************/
 
         //navigate button and openMaps intent to open Map utility and go to chosen place
         button3 = (Button) findViewById(R.id.button12);
@@ -95,6 +62,58 @@ public class Activity2 extends AppCompatActivity implements AdapterView.OnItemSe
         spinner.setAdapter(adapter);
         spinner.setOnItemSelectedListener(this);
 
+    /*
+    Food style buttons stay dark when selected and return to default when unselected
+     */
+
+        button6 = findViewById(R.id.button6);
+        button6.setOnClickListener(new View.OnClickListener() {
+            int select = 1;
+            @Override
+            public void onClick(View v) {
+                if(select == 1){
+                    button6.getBackground().setColorFilter(Color.GRAY, PorterDuff.Mode.MULTIPLY);
+                    select = 0;
+                }
+                else if(select == 0){
+                    button6.getBackground().clearColorFilter();
+                    select = 1;
+                }
+            }
+        });
+
+        button7 = findViewById(R.id.button7);
+        button7.setOnClickListener(new View.OnClickListener() {
+            int select = 1;
+            @Override
+            public void onClick(View v) {
+                if(select == 1){
+                    button7.getBackground().setColorFilter(Color.GRAY, PorterDuff.Mode.MULTIPLY);
+                    select = 0;
+                }
+                else if(select == 0){
+                    button7.getBackground().clearColorFilter();
+                    select = 1;
+                }
+            }
+        });
+
+        button11 = findViewById(R.id.button11);
+        button11.setOnClickListener(new View.OnClickListener() {
+            int select = 1;
+            @Override
+            public void onClick(View v) {
+                if(select == 1){
+                    button11.getBackground().setColorFilter(Color.GRAY, PorterDuff.Mode.MULTIPLY);
+                    select = 0;
+                }
+                else if(select == 0){
+                    button11.getBackground().clearColorFilter();
+                    select = 1;
+                }
+            }
+        });
+
     }
 
     //opens the mainActivity when the button is clicked
@@ -113,4 +132,13 @@ public class Activity2 extends AppCompatActivity implements AdapterView.OnItemSe
     public void onNothingSelected(AdapterView<?> adapterView) {
 
     }
+
+    /*** MADE BY JESUS ON 10/06/2020 ********************************************/
+    /**** NEED TO FIX THIS BUTTON; DOES NOT CALL ACT3, GOES BACK TO MAIN ACT ****/
+//    //opens tips menu from Activity2 (TIPS MENU = ACTIVITY3
+//    public void openActivity3(View view) {
+//        Intent tipsIntent = new Intent(this, Activity3.class);
+//        startActivity(tipsIntent);
+    //}
+    /*** IF DELETED, NEED TO DELETE TIPS BUTTON ON ACT2.XML; ALL THE WAY AT THE BOTTOM *****/
 }
