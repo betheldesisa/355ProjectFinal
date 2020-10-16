@@ -5,6 +5,27 @@
 
     <string name="tips">Tips</string>
     <string name="tipsHowTo">How To Use</string>
+    <string name="buttonActivity2">Activity2</string>
+    <string name="MainActivityHeader">App Name/Login Screen</string>
+
+    <!-- Activity 2 strings -->
+    <string name="activity2Header">What are you feeling today??</string>
+    <string name="buttonMainActivity">Main Activity</string>
+    <string name="buttonMap">Map</string>
+    <string name="TipsButton">Tips (Broken)</string>
+    <string name="activity2SubTitle">Activity 2</string>
+    <string name="layoutPrice">Price</string>
+    <string name="price1">$</string>
+    <string name="price2">$$</string>
+    <string name="price3">$$$</string>
+    <string name="layoutStyle">Style</string>
+    <string name="buttonTakeout">Takeout</string>
+    <string name="buttonDelivery">Delivery</string>
+    <string name="buttonDineIn">Dine-In</string>
+    <string name="stringSeekBar">Distance</string>
+    <string name="groupSize1">Solo</string>
+    <string name="groupSize2">Couple</string>
+    <string name="groupSize3">Group</string>
 
     <!-- String array for type of food-->
 

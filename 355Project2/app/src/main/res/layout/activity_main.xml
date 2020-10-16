@@ -4,50 +4,48 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#020202"
+    android:background="@android:color/background_dark"
     tools:context=".MainActivity">
 
 
     <Button
-        android:id="@+id/button2"
-        android:layout_width="118dp"
-        android:layout_height="51dp"
-        android:layout_marginTop="36dp"
-        android:onClick="openActivity2"
-        android:text="Activity2"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        android:id="@+id/buttonActivity2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        app:layout_constraintTop_toBottomOf="@id/appName"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.841" />
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textColor="@color/colorPrimary"
+        android:onClick="openActivity2"
+        android:text="@string/buttonActivity2"
+        />
 
     <Button
         android:id="@+id/tipsBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="24dp"
-        android:onClick="openActivity3"
-        android:text="Tips"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="120dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.086"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonActivity2"
+        android:text="@string/tips"
+        android:onClick="openActivity3"
+        />
 
     <TextView
         android:id="@+id/appName"
-        android:layout_width="338dp"
-        android:layout_height="55dp"
-        android:text="App Name/Login Screen"
-        android:textColor="#F8F6F6"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/button2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.073" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="24dp"
+        android:text="@string/MainActivityHeader"
+        android:textSize="24sp"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:gravity="center_horizontal" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

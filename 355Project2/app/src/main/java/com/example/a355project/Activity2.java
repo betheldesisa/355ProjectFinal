@@ -25,12 +25,12 @@ import java.util.List;
 public class Activity2 extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
 
     //intialized buttons
-    private Button button3;
+    Button buttonMap;
 
     //food style buttons
-    Button button6;
-    Button button7;
-    Button button11;
+    Button buttonDelivery;
+    Button buttonTakeout;
+    Button buttonDineIn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,11 +39,11 @@ public class Activity2 extends AppCompatActivity implements AdapterView.OnItemSe
 
 
         //navigate button and openMaps intent to open Map utility and go to chosen place
-        button3 = (Button) findViewById(R.id.button12);
+        buttonMap = (Button) findViewById(R.id.buttonMap);
         Uri address = Uri.parse("geo:0,0 ?q=Canes+VCU"); //canes on campus for testing functionality
         final Intent openMaps = new Intent(Intent.ACTION_VIEW, address);
 
-        button3.setOnClickListener(new View.OnClickListener() {
+        buttonMap.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 if(openMaps.resolveActivity(getPackageManager()) != null) { //checks if there is an app installed that can handle gps
@@ -66,49 +66,49 @@ public class Activity2 extends AppCompatActivity implements AdapterView.OnItemSe
     Food style buttons stay dark when selected and return to default when unselected
      */
 
-        button6 = findViewById(R.id.button6);
-        button6.setOnClickListener(new View.OnClickListener() {
+        buttonDelivery = findViewById(R.id.buttonDelivery);
+        buttonDelivery.setOnClickListener(new View.OnClickListener() {
             int select = 1;
             @Override
             public void onClick(View v) {
                 if(select == 1){
-                    button6.getBackground().setColorFilter(Color.GRAY, PorterDuff.Mode.MULTIPLY);
+                    buttonDelivery.getBackground().setColorFilter(Color.GRAY, PorterDuff.Mode.MULTIPLY);
                     select = 0;
                 }
                 else if(select == 0){
-                    button6.getBackground().clearColorFilter();
+                    buttonDelivery.getBackground().clearColorFilter();
                     select = 1;
                 }
             }
         });
 
-        button7 = findViewById(R.id.button7);
-        button7.setOnClickListener(new View.OnClickListener() {
+        buttonTakeout = findViewById(R.id.buttonTakeout);
+        buttonTakeout.setOnClickListener(new View.OnClickListener() {
             int select = 1;
             @Override
             public void onClick(View v) {
                 if(select == 1){
-                    button7.getBackground().setColorFilter(Color.GRAY, PorterDuff.Mode.MULTIPLY);
+                    buttonTakeout.getBackground().setColorFilter(Color.GRAY, PorterDuff.Mode.MULTIPLY);
                     select = 0;
                 }
                 else if(select == 0){
-                    button7.getBackground().clearColorFilter();
+                    buttonTakeout.getBackground().clearColorFilter();
                     select = 1;
                 }
             }
         });
 
-        button11 = findViewById(R.id.button11);
-        button11.setOnClickListener(new View.OnClickListener() {
+        buttonDineIn = findViewById(R.id.buttonDineIn);
+        buttonDineIn.setOnClickListener(new View.OnClickListener() {
             int select = 1;
             @Override
             public void onClick(View v) {
                 if(select == 1){
-                    button11.getBackground().setColorFilter(Color.GRAY, PorterDuff.Mode.MULTIPLY);
+                    buttonDineIn.getBackground().setColorFilter(Color.GRAY, PorterDuff.Mode.MULTIPLY);
                     select = 0;
                 }
                 else if(select == 0){
-                    button11.getBackground().clearColorFilter();
+                    buttonDineIn.getBackground().clearColorFilter();
                     select = 1;
                 }
             }
