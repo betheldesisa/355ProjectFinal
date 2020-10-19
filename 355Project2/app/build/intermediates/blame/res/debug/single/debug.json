@@ -68,6 +68,10 @@
         "source": "D:\\CMSC 355\\355ProjectFinal\\355Project2\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
     },
     {
+        "merged": "D:\\CMSC 355\\355ProjectFinal\\355Project2\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_4.xml.flat",
+        "source": "D:\\CMSC 355\\355ProjectFinal\\355Project2\\app\\src\\main\\res\\layout\\activity_4.xml"
+    },
+    {
         "merged": "D:\\CMSC 355\\355ProjectFinal\\355Project2\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
         "source": "D:\\CMSC 355\\355ProjectFinal\\355Project2\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
     },

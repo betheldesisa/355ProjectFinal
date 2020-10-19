@@ -811,9 +811,12 @@ drawable tooltip_frame_light
 drawable track
 id ALT
 id Activity2Header
+id Activity4
 id CTRL
+id DistanceSelection
 id FUNCTION
 id GroupLayout
+id GroupSelection
 id Instructions
 id META
 id NO_DEBUG
@@ -948,6 +951,7 @@ id end
 id expand_activities_button
 id expanded_menu
 id flip
+id foodSelection
 id forever
 id gone
 id graph
@@ -968,6 +972,11 @@ id invisible
 id italic
 id jumpToEnd
 id jumpToStart
+id label1
+id label2
+id label3
+id label4
+id label5
 id layout
 id layoutStyle
 id left
@@ -998,6 +1007,7 @@ id percent
 id position
 id postLayout
 id priceLayout
+id priceSelection
 id progress_circular
 id progress_horizontal
 id radio
@@ -1048,6 +1058,7 @@ id startVertical
 id staticLayout
 id staticPostLayout
 id stop
+id styleSelection
 id submenuarrow
 id submit_area
 id tabMode
@@ -1131,6 +1142,7 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_2
 layout activity_3
+layout activity_4
 layout activity_main
 layout custom_dialog
 layout notification_action

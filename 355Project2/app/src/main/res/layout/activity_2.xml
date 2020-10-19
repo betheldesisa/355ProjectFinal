@@ -26,7 +26,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginBottom="24dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/spinner1"
         >
         <Button
             android:id="@+id/buttonMainActivity"
@@ -41,6 +41,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_toEndOf="@+id/buttonMainActivity"
+            android:layout_alignParentRight="true"
             android:layout_toRightOf="@+id/buttonMainActivity"
             android:text="@string/buttonMap"
             />
@@ -48,8 +49,8 @@
             android:id="@+id/buttonActivity2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-
             android:layout_toStartOf="@+id/buttonMainActivity"
+            android:layout_alignParentLeft="true"
             android:layout_toLeftOf="@+id/buttonMainActivity"
             android:text="@string/buttonActivity2"
             />
@@ -62,6 +63,13 @@
             android:layout_centerHorizontal="true"
             android:text="@string/TipsButton"
             />
+        <Button
+            android:id="@+id/Activity4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/tipsBtn"
+            android:layout_below="@id/buttonMap"
+            android:text="Activity4" />
 
     </RelativeLayout>
 
@@ -81,27 +89,24 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Type of Food"
-        android:textColor="#F3EFEF"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        android:layout_marginTop="1dp"
+        app:layout_constraintTop_toBottomOf="@id/GroupLayout"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.658" />
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Type of Food"
+        android:textColor="@android:color/white"
+        />
+
 
     <Spinner
         android:id="@+id/spinner1"
-        android:layout_width="56dp"
-        android:layout_height="32dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.704" />
-
-
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@android:color/white"
+        app:layout_constraintTop_toBottomOf="@id/textView2" />
 
     <TextView
         android:id="@+id/textViewPrice"
@@ -110,7 +115,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/activity2SubTitle"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="1dp"
         android:text="@string/layoutPrice"
         android:textColor="@android:color/white"
         />
@@ -121,32 +126,31 @@
         app:layout_constraintTop_toBottomOf="@id/textViewPrice"
         android:layout_marginTop="12dp"
         >
+            <Button
+                android:id="@+id/buttonPrice1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toStartOf="@id/buttonPrice2"
+                android:layout_toLeftOf="@id/buttonPrice2"
+                android:text="@string/price1"
+                />
 
-        <Button
-            android:id="@+id/buttonPrice1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_toStartOf="@id/buttonPrice2"
-            android:layout_toLeftOf="@id/buttonPrice2"
-            android:text="@string/price1"
-            />
+            <Button
+                android:id="@+id/buttonPrice2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="@string/price2"
+                />
 
-        <Button
-            android:id="@+id/buttonPrice2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:text="@string/price2"
-            />
-
-        <Button
-            android:id="@+id/buttonPrice3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_toEndOf="@id/buttonPrice2"
-            android:layout_toRightOf="@id/buttonPrice2"
-            android:text="@string/price3"
-            />
+            <Button
+                android:id="@+id/buttonPrice3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/buttonPrice2"
+                android:layout_toRightOf="@id/buttonPrice2"
+                android:text="@string/price3"
+                />
 
     </RelativeLayout>
 
@@ -167,7 +171,7 @@
         android:id="@+id/StyleLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="1dp"
         app:layout_constraintTop_toBottomOf="@id/layoutStyle"
         >
 
@@ -176,6 +180,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_toStartOf="@id/buttonDelivery"
+            android:layout_alignParentLeft="true"
             android:layout_toLeftOf="@id/buttonDelivery"
             android:text="@string/buttonTakeout"
             />
@@ -193,6 +198,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_toEndOf="@id/buttonDelivery"
+            android:layout_alignParentRight="true"
             android:layout_toRightOf="@id/buttonDelivery"
             android:text="@string/buttonDineIn"
             />
@@ -204,7 +210,7 @@
         android:id="@+id/seekBarLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="1dp"
         app:layout_constraintTop_toBottomOf="@id/StyleLayout"
         >
 
@@ -231,6 +237,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/seekBar"
+            android:layout_alignStart="@id/seekBar"
             android:layout_alignLeft="@id/seekBar"
             android:text="0"
             android:textColor="@android:color/white"
@@ -249,6 +256,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/seekBar"
+                android:layout_alignEnd="@id/seekBar"
                 android:layout_alignRight="@id/seekBar"
                 android:text="35"
                 android:textColor="@android:color/white" />
@@ -270,6 +278,9 @@
         android:id="@+id/GroupLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/textView9">
 
         <Button

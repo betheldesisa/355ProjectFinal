@@ -20,9 +20,18 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import org.w3c.dom.Text;
+
 import java.util.List;
 
 public class Activity2 extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
+
+
+    public static final String PRICE_TEXT = "com.example.a355project.PRICE_TEXT";
+    public static final String STYLE_TEXT = "com.example.a355project.STYLE_TEXT";
+    public static final String DISTANCE_TEXT = "com.example.a355project.DISTANCE_TEXT";
+    public static final String GROUP_TEXT = "com.example.a355project.GROUP_TEXT";
+    public static final String FOOD_TEXT = "com.example.a355project.FOOD_TEXT";
 
     //intialized buttons
     Button buttonMap;
@@ -31,6 +40,8 @@ public class Activity2 extends AppCompatActivity implements AdapterView.OnItemSe
     Button buttonDelivery;
     Button buttonTakeout;
     Button buttonDineIn;
+
+    String Style = "";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -79,6 +90,7 @@ public class Activity2 extends AppCompatActivity implements AdapterView.OnItemSe
                     buttonDelivery.getBackground().clearColorFilter();
                     select = 1;
                 }
+                Style = Style + "Delivery";
             }
         });
 
@@ -95,6 +107,7 @@ public class Activity2 extends AppCompatActivity implements AdapterView.OnItemSe
                     buttonTakeout.getBackground().clearColorFilter();
                     select = 1;
                 }
+                Style = Style + "Takeout";
             }
         });
 
@@ -107,17 +120,26 @@ public class Activity2 extends AppCompatActivity implements AdapterView.OnItemSe
                     buttonDineIn.getBackground().setColorFilter(Color.GRAY, PorterDuff.Mode.MULTIPLY);
                     select = 0;
                 }
-                else if(select == 0){
+                else if(select == 0) {
                     buttonDineIn.getBackground().clearColorFilter();
                     select = 1;
                 }
+                Style = Style + "Dine-In";
+            }
+        });
+
+        Button Activity4 = (Button) findViewById(R.id.Activity4);
+        Activity4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openActivity4();
             }
         });
 
     }
 
     //opens the mainActivity when the button is clicked
-    public void openActivityMain(View view){
+    public void openActivityMain(){
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
     }
@@ -131,6 +153,13 @@ public class Activity2 extends AppCompatActivity implements AdapterView.OnItemSe
     @Override
     public void onNothingSelected(AdapterView<?> adapterView) {
 
+    }
+
+    public void openActivity4(){
+
+        Intent intent = new Intent(this, Activity4.class);
+        intent.putExtra(STYLE_TEXT, Style);
+        startActivity(intent);
     }
 
     /*** MADE BY JESUS ON 10/06/2020 ********************************************/
