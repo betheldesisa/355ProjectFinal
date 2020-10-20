@@ -36,6 +36,12 @@ public class Activity2 extends AppCompatActivity implements AdapterView.OnItemSe
     //intialized buttons
     Button buttonMap;
 
+    //price buttons
+
+    Button price1;
+    Button price2;
+    Button price3;
+
     //food style buttons
     Button buttonDelivery;
     Button buttonTakeout;
@@ -72,6 +78,61 @@ public class Activity2 extends AppCompatActivity implements AdapterView.OnItemSe
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner.setAdapter(adapter);
         spinner.setOnItemSelectedListener(this);
+
+    /*
+    Price buttons style
+     */
+
+        price1 = findViewById(R.id.buttonPrice1);
+        price1.setOnClickListener(new View.OnClickListener() {
+            int select = 1;
+            @Override
+            public void onClick(View v) {
+                if(select == 1){
+                    price1.getBackground().setColorFilter(Color.GRAY, PorterDuff.Mode.MULTIPLY);
+                    select = 0;
+                }
+                else if(select == 0){
+                    price1.getBackground().clearColorFilter();
+                    select = 1;
+                }
+                Style = Style + "$";
+            }
+        });
+
+        price2 = findViewById(R.id.buttonPrice2);
+        price2.setOnClickListener(new View.OnClickListener() {
+            int select = 1;
+            @Override
+            public void onClick(View v) {
+                if(select == 1){
+                    price2.getBackground().setColorFilter(Color.GRAY, PorterDuff.Mode.MULTIPLY);
+                    select = 0;
+                }
+                else if(select == 0){
+                    price2.getBackground().clearColorFilter();
+                    select = 1;
+                }
+                Style = Style + "$$";
+            }
+        });
+
+        price3 = findViewById(R.id.buttonPrice3);
+        price3.setOnClickListener(new View.OnClickListener() {
+            int select = 1;
+            @Override
+            public void onClick(View v) {
+                if(select == 1){
+                    price3.getBackground().setColorFilter(Color.GRAY, PorterDuff.Mode.MULTIPLY);
+                    select = 0;
+                }
+                else if(select == 0){
+                    price3.getBackground().clearColorFilter();
+                    select = 1;
+                }
+                Style = Style + "$$$";
+            }
+        });
 
     /*
     Food style buttons stay dark when selected and return to default when unselected
