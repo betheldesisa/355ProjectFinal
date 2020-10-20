@@ -23,11 +23,11 @@
         android:id="@+id/bottomMenu"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginBottom="24dp"
-        app:layout_constraintTop_toBottomOf="@id/spinner1"
-        >
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/spinner1">
+
         <Button
             android:id="@+id/buttonMainActivity"
             android:layout_width="wrap_content"
@@ -40,20 +40,19 @@
             android:id="@+id/buttonMap"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_toEndOf="@+id/buttonMainActivity"
             android:layout_alignParentRight="true"
+            android:layout_toEndOf="@+id/buttonMainActivity"
             android:layout_toRightOf="@+id/buttonMainActivity"
-            android:text="@string/buttonMap"
-            />
+            android:text="@string/buttonMap" />
+
         <Button
             android:id="@+id/buttonActivity2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_toStartOf="@+id/buttonMainActivity"
             android:layout_alignParentLeft="true"
+            android:layout_toStartOf="@+id/buttonMainActivity"
             android:layout_toLeftOf="@+id/buttonMainActivity"
-            android:text="@string/buttonActivity2"
-            />
+            android:text="@string/buttonActivity2" />
 
         <Button
             android:id="@+id/tipsBtn"
@@ -61,14 +60,14 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/buttonMainActivity"
             android:layout_centerHorizontal="true"
-            android:text="@string/TipsButton"
-            />
+            android:text="@string/TipsButton" />
+
         <Button
             android:id="@+id/Activity4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_toRightOf="@id/tipsBtn"
             android:layout_below="@id/buttonMap"
+            android:layout_toRightOf="@id/tipsBtn"
             android:text="Activity4" />
 
     </RelativeLayout>

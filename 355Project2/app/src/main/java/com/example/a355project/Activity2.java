@@ -48,6 +48,11 @@ public class Activity2 extends AppCompatActivity implements AdapterView.OnItemSe
     Button buttonDineIn;
 
     String Style = "";
+    String Price = "";
+
+    Boolean booleanPrice1 = false;
+    Boolean booleanPrice2 = false;
+    Boolean booleanPrice3 = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -92,11 +97,11 @@ public class Activity2 extends AppCompatActivity implements AdapterView.OnItemSe
                     price1.getBackground().setColorFilter(Color.GRAY, PorterDuff.Mode.MULTIPLY);
                     select = 0;
                 }
-                else if(select == 0){
+                else if(select == 0) {
                     price1.getBackground().clearColorFilter();
                     select = 1;
                 }
-                Style = Style + "$";
+                booleanPrice1 = toggleBoolean(booleanPrice1);
             }
         });
 
@@ -105,6 +110,7 @@ public class Activity2 extends AppCompatActivity implements AdapterView.OnItemSe
             int select = 1;
             @Override
             public void onClick(View v) {
+                booleanPrice2 = toggleBoolean(booleanPrice2);
                 if(select == 1){
                     price2.getBackground().setColorFilter(Color.GRAY, PorterDuff.Mode.MULTIPLY);
                     select = 0;
@@ -113,7 +119,6 @@ public class Activity2 extends AppCompatActivity implements AdapterView.OnItemSe
                     price2.getBackground().clearColorFilter();
                     select = 1;
                 }
-                Style = Style + "$$";
             }
         });
 
@@ -122,6 +127,7 @@ public class Activity2 extends AppCompatActivity implements AdapterView.OnItemSe
             int select = 1;
             @Override
             public void onClick(View v) {
+                booleanPrice3 = toggleBoolean(booleanPrice3);
                 if(select == 1){
                     price3.getBackground().setColorFilter(Color.GRAY, PorterDuff.Mode.MULTIPLY);
                     select = 0;
@@ -130,7 +136,6 @@ public class Activity2 extends AppCompatActivity implements AdapterView.OnItemSe
                     price3.getBackground().clearColorFilter();
                     select = 1;
                 }
-                Style = Style + "$$$";
             }
         });
 
@@ -193,11 +198,12 @@ public class Activity2 extends AppCompatActivity implements AdapterView.OnItemSe
         Activity4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openActivity4();
+                openActivity4(booleanPrice1, booleanPrice2, booleanPrice3);
             }
         });
 
     }
+
 
     //opens the mainActivity when the button is clicked
     public void openActivityMain(){
@@ -216,11 +222,36 @@ public class Activity2 extends AppCompatActivity implements AdapterView.OnItemSe
 
     }
 
-    public void openActivity4(){
+    public void openActivity4(Boolean booleanPrice1, Boolean booleanPrice2, Boolean booleanPrice3){
+        if(booleanPrice1) {
+            Price = Price + "$";
+        }
+        if(booleanPrice2 && booleanPrice1) {
+            Price = Price + ", $$";
+        }
+        if(booleanPrice2 && !booleanPrice1) {
+            Price = Price + "$$";
+        }
+        if(booleanPrice3 && (booleanPrice1 || booleanPrice2)) {
+            Price = Price + ", $$$";
+        }
+        if(booleanPrice3 && !booleanPrice1 && !booleanPrice2) {
+            Price = Price + "$$$";
+        }
 
         Intent intent = new Intent(this, Activity4.class);
+        intent.putExtra(PRICE_TEXT, Price);
         intent.putExtra(STYLE_TEXT, Style);
         startActivity(intent);
+    }
+
+    public boolean toggleBoolean(Boolean boo){
+        if(boo)
+            boo = false;
+        else
+            boo = true;
+
+        return boo;
     }
 
     /*** MADE BY JESUS ON 10/06/2020 ********************************************/
