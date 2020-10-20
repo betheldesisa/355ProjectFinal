@@ -26,7 +26,7 @@ import java.util.List;
 
 public class Activity2 extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
 
-
+    //variables to be passed through (Do not touch!!!!)
     public static final String PRICE_TEXT = "com.example.a355project.PRICE_TEXT";
     public static final String STYLE_TEXT = "com.example.a355project.STYLE_TEXT";
     public static final String DISTANCE_TEXT = "com.example.a355project.DISTANCE_TEXT";
@@ -47,6 +47,7 @@ public class Activity2 extends AppCompatActivity implements AdapterView.OnItemSe
     Button buttonTakeout;
     Button buttonDineIn;
 
+    //String Storage for pass-through
     String Style = "";
     String Price = "";
     String Group = "";
