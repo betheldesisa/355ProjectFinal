@@ -18,11 +18,14 @@ public class Activity4 extends AppCompatActivity {
         Intent intent = getIntent();
         String Style = intent.getStringExtra(Activity2.STYLE_TEXT);
         String Price = intent.getStringExtra(Activity2.PRICE_TEXT);
+        String Group = intent.getStringExtra(Activity2.GROUP_TEXT);
 
         TextView priceTextView = (TextView) findViewById(R.id.priceSelection);
         TextView styleTextView = (TextView) findViewById(R.id.styleSelection);
+        TextView groupTextView = (TextView) findViewById(R.id.GroupSelection);
 
-        priceTextView.setText("" + Price);
+        priceTextView.setText(Price);
         styleTextView.setText(Style);
+        groupTextView.setText(Group);
     }
 }

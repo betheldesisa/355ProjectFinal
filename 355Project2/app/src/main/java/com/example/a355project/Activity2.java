@@ -49,10 +49,17 @@ public class Activity2 extends AppCompatActivity implements AdapterView.OnItemSe
 
     String Style = "";
     String Price = "";
+    String Group = "";
 
     Boolean booleanPrice1 = false;
     Boolean booleanPrice2 = false;
     Boolean booleanPrice3 = false;
+    Boolean booleanStyle1 = false;
+    Boolean booleanStyle2 = false;
+    Boolean booleanStyle3 = false;
+    Boolean booleanGroup1 = false;
+    Boolean booleanGroup2 = false;
+    Boolean booleanGroup3 = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -202,6 +209,58 @@ public class Activity2 extends AppCompatActivity implements AdapterView.OnItemSe
             }
         });
 
+        final Button buttonSolo = (Button) findViewById(R.id.buttonSolo);
+        buttonSolo.setOnClickListener(new View.OnClickListener() {
+            int select = 1;
+            @Override
+            public void onClick(View view) {
+                booleanGroup1 = !booleanGroup1;
+                if(select == 1){
+                    buttonSolo.getBackground().setColorFilter(Color.GRAY, PorterDuff.Mode.MULTIPLY);
+                    select = 0;
+                }
+                else if(select == 0) {
+                    buttonSolo.getBackground().clearColorFilter();
+                    select = 1;
+                }
+
+            }
+        });
+
+        final Button buttonCouple = (Button) findViewById(R.id.buttonCouple);
+        buttonCouple.setOnClickListener(new View.OnClickListener() {
+            int select = 1;
+            @Override
+            public void onClick(View view) {
+                booleanGroup2 = !booleanGroup2;
+                if(select == 1){
+                    buttonCouple.getBackground().setColorFilter(Color.GRAY, PorterDuff.Mode.MULTIPLY);
+                    select = 0;
+                }
+                else if(select == 0) {
+                    buttonCouple.getBackground().clearColorFilter();
+                    select = 1;
+                }
+            }
+        });
+
+        final Button buttonGroup = (Button) findViewById(R.id.buttonGroup);
+        buttonGroup.setOnClickListener(new View.OnClickListener() {
+            int select = 1;
+            @Override
+            public void onClick(View view) {
+                booleanGroup3 = !booleanGroup3;
+                if(select == 1){
+                    buttonGroup.getBackground().setColorFilter(Color.GRAY, PorterDuff.Mode.MULTIPLY);
+                    select = 0;
+                }
+                else if(select == 0) {
+                    buttonGroup.getBackground().clearColorFilter();
+                    select = 1;
+                }
+            }
+        });
+
     }
 
 
@@ -239,9 +298,26 @@ public class Activity2 extends AppCompatActivity implements AdapterView.OnItemSe
             Price = Price + "$$$";
         }
 
+        if(booleanGroup1) {
+            Group = Group + "Solo";
+        }
+        if(booleanGroup2 && booleanGroup1) {
+            Group = Group + ", Couple";
+        }
+        if(booleanGroup2 && !booleanGroup1) {
+            Group = Group + "Couple";
+        }
+        if(booleanGroup3 && (booleanGroup1 || booleanGroup2)) {
+            Group = Group + ", Group";
+        }
+        if(booleanGroup3 && !booleanGroup1 && !booleanGroup2) {
+            Group = Group + "Group";
+        }
+
         Intent intent = new Intent(this, Activity4.class);
         intent.putExtra(PRICE_TEXT, Price);
         intent.putExtra(STYLE_TEXT, Style);
+        intent.putExtra(GROUP_TEXT, Group);
         startActivity(intent);
     }
 
