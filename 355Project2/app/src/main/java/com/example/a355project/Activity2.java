@@ -155,6 +155,7 @@ public class Activity2 extends AppCompatActivity implements AdapterView.OnItemSe
             int select = 1;
             @Override
             public void onClick(View v) {
+                booleanStyle2 = !booleanStyle2;
                 if(select == 1){
                     buttonDelivery.getBackground().setColorFilter(Color.GRAY, PorterDuff.Mode.MULTIPLY);
                     select = 0;
@@ -163,7 +164,6 @@ public class Activity2 extends AppCompatActivity implements AdapterView.OnItemSe
                     buttonDelivery.getBackground().clearColorFilter();
                     select = 1;
                 }
-                Style = Style + "Delivery";
             }
         });
 
@@ -172,6 +172,7 @@ public class Activity2 extends AppCompatActivity implements AdapterView.OnItemSe
             int select = 1;
             @Override
             public void onClick(View v) {
+                booleanStyle1 = !booleanStyle1;
                 if(select == 1){
                     buttonTakeout.getBackground().setColorFilter(Color.GRAY, PorterDuff.Mode.MULTIPLY);
                     select = 0;
@@ -180,7 +181,6 @@ public class Activity2 extends AppCompatActivity implements AdapterView.OnItemSe
                     buttonTakeout.getBackground().clearColorFilter();
                     select = 1;
                 }
-                Style = Style + "Takeout";
             }
         });
 
@@ -189,6 +189,7 @@ public class Activity2 extends AppCompatActivity implements AdapterView.OnItemSe
             int select = 1;
             @Override
             public void onClick(View v) {
+                booleanStyle3 = !booleanStyle3;
                 if(select == 1){
                     buttonDineIn.getBackground().setColorFilter(Color.GRAY, PorterDuff.Mode.MULTIPLY);
                     select = 0;
@@ -197,7 +198,6 @@ public class Activity2 extends AppCompatActivity implements AdapterView.OnItemSe
                     buttonDineIn.getBackground().clearColorFilter();
                     select = 1;
                 }
-                Style = Style + "Dine-In";
             }
         });
 
@@ -282,6 +282,7 @@ public class Activity2 extends AppCompatActivity implements AdapterView.OnItemSe
     }
 
     public void openActivity4(Boolean booleanPrice1, Boolean booleanPrice2, Boolean booleanPrice3){
+        //Price Boolean and String logic
         if(booleanPrice1) {
             Price = Price + "$";
         }
@@ -298,6 +299,24 @@ public class Activity2 extends AppCompatActivity implements AdapterView.OnItemSe
             Price = Price + "$$$";
         }
 
+        //Style Boolean and String logic
+        if(booleanStyle1) {
+            Style = Style + "Take-Out";
+        }
+        if(booleanStyle2 && booleanStyle1) {
+            Style = Style + ", Delivery";
+        }
+        if(booleanStyle1 && !booleanStyle1) {
+            Style = Style + "Delivery";
+        }
+        if(booleanStyle3 && (booleanStyle1 || booleanStyle2)) {
+            Style = Style + ", Dine-In";
+        }
+        if(booleanStyle3 && !booleanStyle1 && !booleanStyle2) {
+            Style = Style + "Dine-In";
+        }
+
+        //Group Boolean and String logic
         if(booleanGroup1) {
             Group = Group + "Solo";
         }
